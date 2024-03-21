@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Webpage</title>
+</head>
+<body style="background-color: #f0f0f0; font-family: Arial, sans-serif;">
+
+  <h1>Welcome to the Product Information Page!</h1>
+
+  <p>Explore our featured products and leave a review!</p>
+
+  <table border="1" style="width: 50%; margin-bottom: 20px;">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>iphone 14</td>
+        <td>This is one of the best phones!</td>
+        <td style="text-align: right;">$399.99</td>
+      </tr>
+      <tr>
+        <td>GTX 550 ti</td>
+        <td>A cheap graphic card for gaming!</td>
+        <td style="text-align: right;">$50.99</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Leave a Review</h2>
+  <form action="/submit_review" method="post" style="border: 1px solid #ccc; padding: 10px;">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required style="width: 100%; margin-bottom: 10px;"><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" style="width: 100%; margin-bottom: 10px;"><br>
+
+    <label for="rating">Rating:</label>
+    <select id="rating" name="rating" required style="width: 100%; margin-bottom: 10px;">
+      <option value="">Select Rating</option>
+      <option value="5">5 Stars (Excellent)</option>
+      <option value="4">4 Stars (Very Good)</option>
+      <option value="3">3 Stars (Good)</option>
+      <option value="2">2 Stars (Fair)</option>
+      <option value="1">1 Star (Poor)</option>
+    </select><br>
+
+    <label for="review">Your Review:</label>
+    <textarea id="review" name="review" rows="5" style="width: 100%; margin-bottom: 10px;"></textarea><br>
+
+    <input type="submit" value="Submit Review" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+  </form>
+
+  <p>Want to learn more about our products? <a href="https://www.example.com/products" style="color: blue; text-decoration: underline;">Visit our product catalog!</a></p>
+
+</body>
+</html>
